@@ -4,6 +4,7 @@ function obtenerRol() {
   return localStorage.getItem("rol");
 }
 
+// hola 
 // Verifica si hay token
 function obtenerToken() {
   return localStorage.getItem("token");
