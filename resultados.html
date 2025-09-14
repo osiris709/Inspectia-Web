@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INSPECTIA-WEB | Resultados de Inspección</title>
+    <link rel="stylesheet" href="styles-inspeccion.css" />
+    <link rel="stylesheet" href="styles-resultados.css" />
+  </head>
+  <body>
+    <aside id="sidebar" class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li id="nav-inspecciones" class="oculto">
+            <a href="inspecciones.html">Registrar Inspección</a>
+          </li>
+          <li id="nav-usuarios" class="oculto">
+            <a href="usuarios.html">Gestión de Usuarios</a>
+          </li>
+          <li id="nav-resultados" class="oculto">
+            <a href="resultados.html">Resultados</a>
+          </li>
+          <li><a id="logout">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <header>
+      <img
+        id="logo"
+        src="logo-light.png"
+        alt="Logo INSPECTIA-WEB"
+        class="logo"
+      />
+      <div class="title-group">
+        <h1>INSPECTIA-WEB</h1>
+        <p>AI-POWERED QUALITY INSPECTION</p>
+      </div>
+      <div class="user-info">
+        <span>Usuario</span>
+      </div>
+    </header>
+
+    <main class="dashboard" id="ver-resultados">
+      <section class="resultados-section">
+        <h2>Resultados de Inspecciones</h2>
+
+        <div class="filtros">
+          <input
+            type="text"
+            id="filtro-producto"
+            placeholder="Buscar por producto"
+          />
+          <select id="filtro-estado">
+            <option value="">Todos los estados</option>
+            <option value="Aprobada">Aprobada</option>
+            <option value="Rechazada">Rechazada</option>
+          </select>
+        </div>
+
+        <table id="tabla-resultados">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Fecha</th>
+              <th>Observaciones</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Resultados se insertan dinámicamente -->
+          </tbody>
+        </table>
+
+        <div class="paginacion">
+          <button id="prev-pagina">⬅️ Anterior</button>
+          <span id="pagina-actual">Página 1</span>
+          <button id="next-pagina">Siguiente ➡️</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="resultados.js"></script>
+    <script src="auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </body>
+</html>

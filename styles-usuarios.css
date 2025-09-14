@@ -1,0 +1,111 @@
+/* Sección de formulario */
+.form-section {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-section label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.form-section input,
+.form-section select {
+  width: 96%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-section button {
+  margin-top: 1.5rem;
+  width: 100%;
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Mensaje de éxito */
+.mensaje-exito {
+  margin-top: 1rem;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+/* Tabla de usuarios */
+.tabla-usuarios {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.tabla-usuarios table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.tabla-usuarios th {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.tabla-usuarios button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tabla-usuarios button:first-child {
+  background-color: #3498db;
+}
+
+/* Paginación */
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.paginacion button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.paginacion button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#pagina-actual {
+  font-weight: bold;
+}

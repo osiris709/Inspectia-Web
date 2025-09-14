@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - INSPECTIA-WEB</title>
+    <link rel="stylesheet" href="styles-login.css" />
+  </head>
+  <body>
+    <div class="theme-toggle">
+      <button id="toggleTheme">🌓</button>
+    </div>
+
+    <header>
+      <img
+        id="logo"
+        src="logo-light.png"
+        alt="Logo INSPECTIA-WEB"
+        class="logo"
+      />
+      <div class="title-group">
+        <h1>INSPECTIA-WEB</h1>
+        <p>AI-POWERED QUALITY INSPECTION</p>
+      </div>
+    </header>
+
+    <main>
+      <h2>Acceder al Sistema</h2>
+      <form id="loginForm">
+        <input
+          type="text"
+          id="usuario"
+          placeholder="Nombre de usuario o email"
+          required
+        />
+        <input
+          type="password"
+          id="contraseña"
+          placeholder="Contraseña"
+          required
+        />
+
+        <p id="errorMessage" class="error"></p>
+
+        <label class="remember">
+          <input type="checkbox" id="rememberMe" />
+          Recordarme
+        </label>
+
+        <button type="submit">Iniciar Sesión</button>
+
+        <div class="links">
+          <a href="#">Olvidé mi contraseña</a>
+          <a href="#">Solicitar Demo</a>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>info@inspectiaweb.com | +57 315 555 999</p>
+      <p>
+        <a href="#">Política de privacidad</a> |
+        <a href="#">Términos de servicio</a>
+      </p>
+      <p>© 2025 INSPECTIA-WEB</p>
+    </footer>
+
+    <script src="darkmode.js"></script>
+    <script src="login.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>

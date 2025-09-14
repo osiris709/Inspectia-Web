@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INSPECTIA-WEB | Registrar Inspección</title>
+    <link rel="stylesheet" href="styles-inspeccion.css" />
+  </head>
+  <body>
+    <aside id="sidebar" class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li id="nav-inspecciones" class="oculto">
+            <a href="inspecciones.html">Registrar Inspección</a>
+          </li>
+          <li id="nav-usuarios" class="oculto">
+            <a href="usuarios.html">Gestión de Usuarios</a>
+          </li>
+          <li id="nav-resultados" class="oculto">
+            <a href="resultados.html">Resultados</a>
+          </li>
+          <li><a id="logout">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <header>
+      <img
+        id="logo"
+        src="logo-light.png"
+        alt="Logo INSPECTIA-WEB"
+        class="logo"
+      />
+      <div class="title-group">
+        <h1>INSPECTIA-WEB</h1>
+        <p>AI-POWERED QUALITY INSPECTION</p>
+      </div>
+      <div class="user-info">
+        <span>Usuario</span>
+      </div>
+    </header>
+
+    <main class="dashboard" id="registrar-inspeccion">
+      <section class="form-section">
+        <h2>Registrar Nueva Inspección</h2>
+        <form id="inspeccion-form">
+          <label for="producto">Producto</label>
+          <input type="text" id="producto" name="producto" />
+
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" value="" />
+
+          <label for="observaciones">Observaciones</label>
+          <textarea id="observaciones" name="observaciones" rows="4"></textarea>
+
+          <input type="file" id="imagen" accept="image/*" style="display: none;" />
+          <button type="button" id="boton-adjuntar">Adjuntar imagen</button>
+
+          <div id="preview-container">
+            <img
+              id="preview-img"
+              src=""
+              alt="Vista previa de la imagen"
+              style="max-width: 300px; display: none;"
+            />
+          </div>
+
+          <button type="submit" class="submit-btn">Registrar inspección</button>
+        </form>
+      </section>
+
+      <div class="card">
+        <h3>Resultado IA</h3>
+        <div class="card-content">
+          <div class="spinner-container">
+            <div class="spinner"></div>
+          </div>
+          <div class="status-message">
+            <div class="check-icon">✓</div>
+            <p>Aprobada</p>
+          </div>
+          <a href="#" class="details-link">Ver detalles técnicos</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="inspeccion.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>

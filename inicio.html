@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INSPECTIA-WEB | Inicio</title>
+    <link rel="stylesheet" href="styles-inspeccion.css" />
+  </head>
+  <body>
+    <aside id="sidebar" class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li id="nav-inspecciones" class="oculto">
+            <a href="inspecciones.html">Registrar Inspección</a>
+          </li>
+          <li id="nav-usuarios" class="oculto">
+            <a href="usuarios.html">Gestión de Usuarios</a>
+          </li>
+          <li id="nav-resultados" class="oculto">
+            <a href="resultados.html">Resultados</a>
+          </li>
+          <li><a id="logout">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <header>
+      <img
+        id="logo"
+        src="logo-light.png"
+        alt="Logo INSPECTIA-WEB"
+        class="logo"
+      />
+      <div class="title-group">
+        <h1>INSPECTIA-WEB</h1>
+        <p>AI-POWERED QUALITY INSPECTION</p>
+      </div>
+      <div class="user-info">
+        <span>Usuario</span>
+      </div>
+    </header>
+
+    <main class="dashboard" id="bienvenida">
+      <div class="bienvenida">
+        <h2 id="mensaje-bienvenida"></h2>
+      </div>
+    </main>
+
+    <script>
+      const nombreUsuario = localStorage.getItem("usuario");
+      if (nombreUsuario) {
+        document.getElementById("mensaje-bienvenida").textContent = `Bienvenido, ${nombreUsuario}`;
+      }
+    </script>
+    <script src="auth.js"></script>
+  </body>
+</html>

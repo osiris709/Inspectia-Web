@@ -1,0 +1,47 @@
+/* Sección principal de resultados */
+.resultados-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Filtros de búsqueda */
+.filtros {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filtros input,
+.filtros select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Tabla de resultados */
+#tabla-resultados {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tabla-resultados th,
+#tabla-resultados td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+#tabla-resultados th {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+/* Paginación */
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
