@@ -18,7 +18,7 @@ function obtenerRol() {
 function verificarAutenticacion() {
   const token = obtenerToken();
   if (!token) {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 }
 
@@ -91,7 +91,7 @@ function confirmLogout() {
   const resultado = confirm('¿Estás seguro de que quieres cerrar la sesión?');
 
   if (resultado) {
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
   } else {
     alert('Acción cancelada.');
   }
@@ -120,7 +120,7 @@ function obtenerRol() {
 function verificarAutenticacion() {
   const token = obtenerToken();
   if (!token) {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 }
 
@@ -173,7 +173,7 @@ function configurarLogout() {
 function confirmLogout() {
   const resultado = confirm("¿Estás seguro de que quieres cerrar la sesión?");
   if (resultado) {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   } else {
     alert("Acción cancelada.");
   }
